@@ -3,9 +3,9 @@ using StructureMapService.Controllers;
 
 namespace StructureMapService.Utilities
 {
-    public static class ContainerBuilder
+    public static class IocContainer
     {
-        public static IContainer Build()
+        public static IContainer Initialize()
         {
             ObjectFactory.Initialize(x => x.Scan(scan =>
             {

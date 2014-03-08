@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("StructureMapService")]
+[assembly: AssemblyTitle("NinjectService")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("StructureMapService")]
-[assembly: AssemblyProduct("StructureMapService")]
+[assembly: AssemblyCompany("NinjectService")]
+[assembly: AssemblyProduct("NinjectService")]
 [assembly: AssemblyCopyright("Copyright © 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -26,10 +26,10 @@ using System.Runtime.InteropServices;
 //
 //      Major Version
 //      Minor Version 
-//      Initialize Number
+//      Build Number
 //      Revision
 //
-// You can specify all the values or you can default the Revision and Initialize Numbers 
+// You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
 [assembly: AssemblyVersion("0.3.*")]
 [assembly: AssemblyFileVersion("0.3.0.0")]
