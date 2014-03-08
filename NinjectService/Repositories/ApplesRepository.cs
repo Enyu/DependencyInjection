@@ -9,12 +9,12 @@ namespace NinjectService.Repositories
     {
         private readonly List<Apple> _apples = FakeData.Apples;
 
-        public List<Apple> ListAll()
+        public virtual List<Apple> ListAll()
         {
             return _apples;
         }
 
-        public Apple GetById(string id)
+        public virtual Apple GetById(string id)
         {
             return _apples.FirstOrDefault(apple => apple.AppleId == id);
         }

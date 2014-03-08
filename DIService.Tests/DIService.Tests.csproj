@@ -39,6 +39,9 @@
       <HintPath>..\packages\FluentAssertions.2.2.0.0\lib\net45\FluentAssertions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1402.2112\lib\net40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -73,6 +76,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NinjectService\NinjectService.csproj">
+      <Project>{0f61ad7e-b023-4f34-b732-c383e67bc8a3}</Project>
+      <Name>NinjectService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StructureMapService\StructureMapService.csproj">
       <Project>{fdc4dd7f-2f18-433e-a36c-65b07d95ee5b}</Project>
       <Name>StructureMapService</Name>
