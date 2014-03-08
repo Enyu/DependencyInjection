@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{74D00C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjectService", "NinjectService\NinjectService.csproj", "{0F61AD7E-B023-4F34-B732-C383E67BC8A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIService.Tests", "DIService.Tests\DIService.Tests.csproj", "{167FECC6-4231-49DF-B91E-3D87789B2525}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{0F61AD7E-B023-4F34-B732-C383E67BC8A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F61AD7E-B023-4F34-B732-C383E67BC8A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F61AD7E-B023-4F34-B732-C383E67BC8A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{167FECC6-4231-49DF-B91E-3D87789B2525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{167FECC6-4231-49DF-B91E-3D87789B2525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{167FECC6-4231-49DF-B91E-3D87789B2525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{167FECC6-4231-49DF-B91E-3D87789B2525}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
