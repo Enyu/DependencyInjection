@@ -4,7 +4,6 @@ DependencyInjection
 
 
 This solution includes basic implementation of StructureMap and Ninject.
-----------
 
 
 ## Getting Started
@@ -13,11 +12,10 @@ This solution includes basic implementation of StructureMap and Ninject.
       In package Manager Console:
    ```
    Install-Package WebApiContrib.IoC.Ninject
-   }
    ```
 
 
-***2 build one Kernel object like a IOC container
+### 2 build one Kernel object like a IOC container
 
     public static IKernel Initialize()
     {
@@ -26,7 +24,7 @@ This solution includes basic implementation of StructureMap and Ninject.
         return kernel;
     }
 
-***3. register this container in global configuration denpendency resolver ***
+### 3.register this container in global configuration denpendency resolver ***
 
     protected void Application_Start()
     {
@@ -34,7 +32,7 @@ This solution includes basic implementation of StructureMap and Ninject.
         GlobalConfiguration.Configuration.DependencyResolver = new NinjectResolver(Initialize());
     }
 
-***3. Now we can use constructure inject our dependency ***
+### 3. Now we can use constructure inject our dependency ***
 
     public class Controller : ApiController
     {
@@ -46,4 +44,3 @@ This solution includes basic implementation of StructureMap and Ninject.
         }
     }
 
-***
