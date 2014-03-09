@@ -41,7 +41,7 @@ The WebApiContrib.IoC.Ninject lib is the encapsulation for Ninject resolver.
         }
     }
 
-## =================================================================
+## ==============Cut-off rule!!!=================
 
 ## StructureMap
 
