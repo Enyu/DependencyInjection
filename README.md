@@ -3,7 +3,9 @@ DependencyInjection
 
 This solution includes basic implementation of StructureMap and Ninject.
 
-The WebApiContrib.IoC.Ninject lib is the encapsulation for Ninject resolver.
+The WebApiContrib.IoC.Ninject and WebApiContrib.IoC.StructureMap lib is the encapsulation for structureMap/Ninject resolver.
+We can use each of them to implement DI cushily in our asp.net webapi application.
+
 
 
 ## Ninject:
