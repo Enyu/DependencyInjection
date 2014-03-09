@@ -1,19 +1,19 @@
 DependencyInjection
 ===================
 
-
-
 This solution includes basic implementation of StructureMap and Ninject.
 
 The WebApiContrib.IoC.Ninject lib is the encapsulation for Ninject resolver.
-## Getting Started
+
+
+## Ninject:
 
 ### 1.Install WebApiContrib.Ioc.Ninject in package Manager Console:
    ```
    Install-Package WebApiContrib.IoC.Ninject
    ```
 
-### 2 build one Kernel object like a IOC container
+### 2.Build one Kernel object(IOC container)
 
     public static IKernel Initialize()
     {
@@ -22,7 +22,7 @@ The WebApiContrib.IoC.Ninject lib is the encapsulation for Ninject resolver.
         return kernel;
     }
 
-### 3.register this container in global configuration denpendency resolver.
+### 3.Register IOC container in global configuration denpendency resolver when application start.
 
     protected void Application_Start()
     {
@@ -30,12 +30,11 @@ The WebApiContrib.IoC.Ninject lib is the encapsulation for Ninject resolver.
         GlobalConfiguration.Configuration.DependencyResolver = new NinjectResolver(Initialize());
     }
 
-### 4. Now we can use constructure inject our dependency.
+### 4.Now we can use constructure to inject our dependency.
 
     public class Controller : ApiController
     {
         private readonly IRepository _repository;
-
         public Controller(IRepository repository)
         {
             _repository = repository;
