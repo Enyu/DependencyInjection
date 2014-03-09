@@ -14,6 +14,7 @@ This solution includes basic implementation of StructureMap and Ninject.
    ```
    Install-Package WebApiContrib.IoC.Ninject
    }
+   ```
 
 
 ***2 build one Kernel object like a IOC container
