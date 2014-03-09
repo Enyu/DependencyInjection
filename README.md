@@ -2,6 +2,7 @@ DependencyInjection
 ===================
 
 WebApiContrib.IoC.Ninject
+
 Getting Started
 
 If you would like to use Ninject as your Inversion of Control Container inside your ASP.NET Web API application, this library will make things simple. Here are the steps to getting started on a new project with WebApiContrib.IoC.Ninject.
@@ -19,11 +20,13 @@ protected void Application_Start()
     RouteConfig.RegisterRoutes(RouteTable.Routes);
     BundleConfig.RegisterBundles(BundleTable.Bundles);
 }
+
 2. Add a Reference
 
 The best way to get your hands on WebApiContrib.IoC.Ninject is to grab the package from NuGet:
 
 Install-Package WebApiContrib.IoC.Ninject
+
 3. Tying it Together
 
 You're now ready to bring it all together. Here's what a sample application might look like after we've added Ninject.
@@ -46,6 +49,7 @@ protected void Application_Start()
     RouteConfig.RegisterRoutes(RouteTable.Routes);
     BundleConfig.RegisterBundles(BundleTable.Bundles);
 }
+
 4. That's It!
 
 Fairly simple, right? After bringing this code into your project, you can now leverage all the benefits and goodness that Ninject has to offer. Happy building!
