@@ -8,7 +8,7 @@ The WebApiContrib.IoC.Ninject lib is the encapsulation for Ninject resolver.
 
 ## Ninject:
 
-### 1.Install WebApiContrib.Ioc.Ninject in package Manager Console:
+### 1.Install WebApiContrib.Ioc.Ninject in package Manager Console.
    ```
    Install-Package WebApiContrib.IoC.Ninject
    ```
@@ -41,3 +41,44 @@ The WebApiContrib.IoC.Ninject lib is the encapsulation for Ninject resolver.
         }
     }
 
+## =================================================================
+
+## StructureMap
+
+### 1.Install WebApiContrib.Ioc.StructureMap in package Manager Console.
+   ```
+   Install-Package WebApiContrib.IoC.StructureMap
+   ```
+
+### 2.Build one IOC container.
+
+    public static IContainer Initialize()
+
+        ObjectFactory.Initialize(x => x.Scan(scan =>
+        {
+            scan.LookForRegistries();
+            //either way blow is ok.
+            //scan.Assembly("AssemblyName");
+            scan.AssemblyContainingType<Controller>();
+            }));
+            return ObjectFactory.Container;
+        }
+
+### 3.Register IOC container in global configuration denpendency resolver when application start.
+
+    protected void Application_Start()
+    {
+        //...
+        GlobalConfiguration.Configuration.DependencyResolver = new StructureMapResolver(Initialize());
+    }
+
+### 4.Now we can use constructure to inject our dependency.
+
+    public class Controller : ApiController
+    {
+        private readonly IRepository _repository;
+        public Controller(IRepository repository)
+        {
+            _repository = repository;
+        }
+    }
